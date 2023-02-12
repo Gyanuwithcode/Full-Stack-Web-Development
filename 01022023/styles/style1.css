@@ -1,0 +1,126 @@
+
+    /* css reset */
+    *{
+        margin:0;
+        padding:0;
+        outline:0;
+        box-sizing: border-box;
+     
+    }
+    body{
+        background-color:#dad5d5;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        height:100vh;
+        font-family: 'Poppins', sans-serif;   
+        font-family: 'Source Sans Pro', sans-serif;
+        
+    }
+    .card{
+    
+        width:250px;
+        height:350px;
+        padding:15px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+        background-color: #eeecec;
+        border-radius: 10px;
+    box-shadow:5px 5px 5px rgb(18, 18, 18), -5px -5px 5px rgb(255, 255, 255);
+    /* box-shadow:0 0 5px black; */
+
+    }
+    .profilename{
+        font-weight: 700;
+        margin-bottom: 5px;
+        color:#414141;
+        line-height: 20px;
+    }
+    .profiledetails{
+        font-weight: 500;
+    }
+    .profileimage{
+        width:100px;
+        height:100px;
+        margin-bottom:5px;
+        border-radius: 50%;
+        border:5px solid rgb(205, 204, 204);
+        box-shadow:2px 2px 2px rgb(18, 18, 18), -2px -2px 2px rgb(255, 255, 255);
+    }
+    .topsection{
+        display:flex;
+        align-items: center;
+        justify-content:space-between;
+        width:100%;
+        font-size: 20px;;
+    }
+    .likesharecomment{
+        display:flex; 
+        width:90%;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    .like{
+       border-right: 3px solid rgb(129, 129, 129);
+        /* height: 5px; */   
+    }
+    .comment{
+        border-right: 3px solid rgb(129, 129, 129);
+    }
+    .share{
+        border-right: 3px solid rgb(129, 129, 129);
+      
+    }
+    .socialmedia{
+        display:flex;
+        width:100%;
+        justify-content:space-evenly;
+        align-items: center; 
+    
+    }
+    .socialmedia i{
+        font-size: 18px;   
+        box-shadow:2px 2px 2px rgb(18, 18, 18), -2px -2px 2px rgb(255, 255, 255);
+        padding:10px;
+        background-color: #dab8b8;
+        /* border-radius: 50%; */
+        border:2px solid #ffd700;
+        cursor:pointer;
+        transition:-3s;
+    }   
+    .socialmedia i:first-child{             
+        color:blue;
+       
+        
+    }
+    .socialmedia i:last-child{
+        color:red;
+        
+    }
+    .socialmedia i:nth-child(2){
+        color:rgb(21, 143, 209);
+        
+    }
+    .socialmedia i:nth-child(3){
+        color:rgb(240, 118, 139);
+       
+    }
+    i{
+    border-radius: 50%;
+    padding:1px 2px;
+
+    }
+    .mybtn{ 
+           width:110%;
+        display:flex;
+        align-items: center;
+        justify-content:space-around;
+
+    }
+    .mybtn button{
+        padding:5px 15px;
+        box-shadow:2px 2px 2px rgb(18, 18, 18), -2px -2px 2px rgb(255, 255, 255);
+    }
