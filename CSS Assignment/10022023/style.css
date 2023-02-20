@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color:#101828;
+    color:#ffffff;
+}
+nav{
+    margin:20px;
+}
+nav ul{
+    display:flex;
+    justify-content:flex-end;
+    flex-direction: row;
+    gap:20px;
+}
+nav ul li{
+    list-style-type: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+nav ul .home-option{
+    background-color: #4141f5;
+    border-radius: 15px;
+    padding:1px 8px;
+}
+nav img{
+    display:none;
+}
+/* intro section */
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap:30px;
+}
+.intro-left .intro-line-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+}
+img[alt="Hi"] {
+   height:45px;
+}
+.intro-left .intro-line-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.intro-line-2 h2 {
+    color: #ffff00;
+}
+img[alt="pc-image"] {
+    width: 400px;
+}
+/* Project Section */
+.projects{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projects h1{
+    margin-top: 20px;
+    font-size: 40px;;
+}
+
+.horingental-line{
+    height:8px;
+    width:145px;
+    background-color: #4141f5;
+    border-radius: 20px;
+    margin-bottom: 20px;   
+}
+.project-list{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 40px;
+    /* row-gap: 20px; */
+}
+img[alt="image"]{
+    width:20vw;
+}
+.project p{
+    text-align: center;
+    color:peru;
+}
+/* Footer Section */
+.footer-heading{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.footer-heading h1{
+    font-size: 35px;
+}
+.social-icons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    margin-bottom: 20px;
+}
+.social-icons a img{
+       width:25px;
+}
+.horingental-line-1{
+    height:8px;
+    width:190px;
+    background-color: #4141f5;
+    border-radius: 20px;
+    margin-bottom: 20px;  
+}
+/* Media Query */
+@media screen and (max-width:860px) {
+    nav ul{
+      display: none;
+    }
+    nav img{
+        display:block;
+        width:20px;
+    }
+    .intro {
+        flex-direction: column;
+    }
+    img[alt="pc-image"] {
+        width: 400px;
+    }
+    .project-list {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 20px;
+    }
+    .project img {
+        width: 250px;
+    }
+}
